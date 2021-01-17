@@ -11,6 +11,7 @@
 		F44D470425B4349700AE7690 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44D470325B4349700AE7690 /* ContentView.swift */; };
 		F44D470625B4349900AE7690 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F44D470525B4349900AE7690 /* Assets.xcassets */; };
 		F44D470925B4349900AE7690 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F44D470825B4349900AE7690 /* Preview Assets.xcassets */; };
+		F44D471225B434B700AE7690 /* AudioRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44D471125B434B700AE7690 /* AudioRecorder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,7 @@
 		F44D470525B4349900AE7690 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F44D470825B4349900AE7690 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F44D470A25B4349900AE7690 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F44D471125B434B700AE7690 /* AudioRecorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioRecorder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,7 +55,8 @@
 			isa = PBXGroup;
 			children = (
 				F44D470125B4349700AE7690 /* Audio_RecorderApp.swift */,
-				F44D470325B4349700AE7690 /* ContentView.swift */,
+				F44D471425B434C200AE7690 /* Views */,
+				F44D471525B434CC00AE7690 /* Models */,
 				F44D470525B4349900AE7690 /* Assets.xcassets */,
 				F44D470A25B4349900AE7690 /* Info.plist */,
 				F44D470725B4349900AE7690 /* Preview Content */,
@@ -67,6 +70,22 @@
 				F44D470825B4349900AE7690 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F44D471425B434C200AE7690 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F44D470325B4349700AE7690 /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F44D471525B434CC00AE7690 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F44D471125B434B700AE7690 /* AudioRecorder.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +157,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F44D471225B434B700AE7690 /* AudioRecorder.swift in Sources */,
 				F44D470425B4349700AE7690 /* ContentView.swift in Sources */,
 				F44D470225B4349700AE7690 /* Audio_RecorderApp.swift in Sources */,
 			);
