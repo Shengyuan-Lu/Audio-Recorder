@@ -42,7 +42,7 @@ struct MainView: View {
                         print("Stop recording")
                         
                     }) {
-                        Image(systemName: "stop.fill")
+                        Image(systemName: "stop.circle.fill")
                             .resizable()
                             .aspectRatio(contentMode: .fill)
                             .frame(width: 100, height: 100)
@@ -51,8 +51,9 @@ struct MainView: View {
                             .padding(.bottom, 40)
                     }
                 }
-            }
+            } // End of the VStack
             .navigationBarTitle("Voice Recorder", displayMode: .large)
+            .navigationBarItems(trailing: EditButton()) // Add the default edit button to the navigation bar of our ContentView.
         }
     }
 }

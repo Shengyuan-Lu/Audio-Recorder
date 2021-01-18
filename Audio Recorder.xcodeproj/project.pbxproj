@@ -12,10 +12,11 @@
 		F44D470625B4349900AE7690 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F44D470525B4349900AE7690 /* Assets.xcassets */; };
 		F44D470925B4349900AE7690 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F44D470825B4349900AE7690 /* Preview Assets.xcassets */; };
 		F44D471225B434B700AE7690 /* AudioRecorderClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44D471125B434B700AE7690 /* AudioRecorderClass.swift */; };
-		F4C1744425B43CF3009D2B5F /* RecordingsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C1744325B43CF3009D2B5F /* RecordingsList.swift */; };
+		F4C1744425B43CF3009D2B5F /* RecordingsListRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C1744325B43CF3009D2B5F /* RecordingsListRow.swift */; };
 		F4C1744725B4404B009D2B5F /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C1744625B4404B009D2B5F /* DateExtension.swift */; };
 		F4C1744F25B4641F009D2B5F /* RecordingStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C1744E25B4641F009D2B5F /* RecordingStruct.swift */; };
 		F4C1745425B467F7009D2B5F /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C1745325B467F7009D2B5F /* Helper.swift */; };
+		F4C1745825B61987009D2B5F /* AudioPlayerClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C1745725B61987009D2B5F /* AudioPlayerClass.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,10 +27,11 @@
 		F44D470825B4349900AE7690 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F44D470A25B4349900AE7690 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F44D471125B434B700AE7690 /* AudioRecorderClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioRecorderClass.swift; sourceTree = "<group>"; };
-		F4C1744325B43CF3009D2B5F /* RecordingsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingsList.swift; sourceTree = "<group>"; };
+		F4C1744325B43CF3009D2B5F /* RecordingsListRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingsListRow.swift; sourceTree = "<group>"; };
 		F4C1744625B4404B009D2B5F /* DateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
 		F4C1744E25B4641F009D2B5F /* RecordingStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingStruct.swift; sourceTree = "<group>"; };
 		F4C1745325B467F7009D2B5F /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		F4C1745725B61987009D2B5F /* AudioPlayerClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayerClass.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,7 +88,7 @@
 			isa = PBXGroup;
 			children = (
 				F44D470325B4349700AE7690 /* MainView.swift */,
-				F4C1744325B43CF3009D2B5F /* RecordingsList.swift */,
+				F4C1744325B43CF3009D2B5F /* RecordingsListRow.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -95,6 +97,7 @@
 			isa = PBXGroup;
 			children = (
 				F44D471125B434B700AE7690 /* AudioRecorderClass.swift */,
+				F4C1745725B61987009D2B5F /* AudioPlayerClass.swift */,
 				F4C1744E25B4641F009D2B5F /* RecordingStruct.swift */,
 			);
 			path = Models;
@@ -190,8 +193,9 @@
 				F4C1744725B4404B009D2B5F /* DateExtension.swift in Sources */,
 				F4C1744F25B4641F009D2B5F /* RecordingStruct.swift in Sources */,
 				F44D470425B4349700AE7690 /* MainView.swift in Sources */,
+				F4C1745825B61987009D2B5F /* AudioPlayerClass.swift in Sources */,
 				F44D470225B4349700AE7690 /* Audio_RecorderApp.swift in Sources */,
-				F4C1744425B43CF3009D2B5F /* RecordingsList.swift in Sources */,
+				F4C1744425B43CF3009D2B5F /* RecordingsListRow.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

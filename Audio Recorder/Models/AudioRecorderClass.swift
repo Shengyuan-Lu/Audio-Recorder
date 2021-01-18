@@ -19,9 +19,9 @@ class AudioRecorder: NSObject, ObservableObject {
     // Create an array to hold the recordings
     var recordings = [Recording]()
     
-    /* AudioRecorder class should pay attention to whether something is being recorded or not.
-     For this purpose, we use a suitable variable.
-     If this variable is changed, for example when the recording is finished, we update subscribing views using our objectWillChange property.*/
+    // AudioRecorder class should pay attention to whether something is being recorded or not.
+    //For this purpose, we use a suitable variable.
+    // If this variable is changed, for example when the recording is finished, we update subscribing views using our objectWillChange property.
     var recording = false {
         didSet {
             objectWillChange.send(self)
@@ -33,8 +33,8 @@ class AudioRecorder: NSObject, ObservableObject {
         // Within this function we first create a recording session using AVFoundation framework
         let recordingSession = AVAudioSession.sharedInstance()
         
-        /* Define the type for our recording session and activate it.
-         If this fails, we’ll output a corresponding error.*/
+        // Define the type for our recording session and activate it.
+        // If this fails, we’ll output a corresponding error.
         do {
             try recordingSession.setCategory(.playAndRecord, mode: .default)
             try recordingSession.setActive(true)
@@ -56,8 +56,8 @@ class AudioRecorder: NSObject, ObservableObject {
             AVEncoderAudioQualityKey: AVAudioQuality.high.rawValue
         ]
         
-        /* start the recording with our audioRecorder property!
-         Then we inform our ContentView that the recording is running so that it can update itself and display the stop button instead of the start button. */
+        // Start the recording with our audioRecorder property!
+        // Then we inform our ContentView that the recording is running so that it can update itself and display the stop button instead of the start button. */
         do {
             audioRecorder = try AVAudioRecorder(url: audioFilename, settings: settings)
             audioRecorder.record()
@@ -101,6 +101,23 @@ class AudioRecorder: NSObject, ObservableObject {
         objectWillChange.send(self)
         
     }
+    
+    // Accepts an array of urls and deletes the corresponding files from the document folder.
+    // When the deletion is completed we update our recordings array using the fetchRecording function.
+    func deleteRecording(urlsToDelete: [URL]) {
+            
+            for url in urlsToDelete {
+                print(url)
+                do {
+                   try FileManager.default.removeItem(at: url)
+                } catch {
+                    print("File could not be deleted!")
+                }
+            }
+            
+            fetchRecordings()
+            
+        }
     
     
     
