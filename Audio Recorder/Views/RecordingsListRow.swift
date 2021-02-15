@@ -58,7 +58,7 @@ struct RecordingRow: View {
         }
     } // End of body
     
-
+    
 }
 
 struct RecordingsList_Previews: PreviewProvider {

@@ -54,8 +54,8 @@ class AudioPlayer: NSObject, ObservableObject, AVAudioPlayerDelegate {
     
     // If the audio was successfully played, we set the playing properties value back to false.
     func audioPlayerDidFinishPlaying(_ player: AVAudioPlayer, successfully flag: Bool) {
-            if flag {
-                isPlaying = false
-            }
+        if flag {
+            isPlaying = false
         }
+    }
 }
